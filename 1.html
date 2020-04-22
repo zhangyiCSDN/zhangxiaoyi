@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>表单新属性练习</title>
+</head>
+<body>
+<from action="https://www.runoob.com/try/demo_source/demo-form.php" autocomplete="on" autofocus placeholder="计算机科学与技术">
+用户名:<input type="text" name="class" required pattern="^[0-9]{10,} $"><br>
+&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:red;font-size:12px">只允许输入数字,且长度至少为10位</span><br>
+密码:<input type="password" name="password" required pattern="^[z-zA-Z0-9]{10,} $"><br>
+&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:red;font-size:12px">只允许输入数字和字母,且长度至少为10位</span><br>
+<input type="hidden" id="hidden1" name="隐藏字段联系">
+<input type="submit" value="提交">
+</from>
+</body>
+</html>

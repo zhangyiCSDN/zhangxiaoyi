@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>表单练习3</title>
+</head>
+<body>
+<div id="Layer0" style="position:absolute; width:100%; height:100%; z-index:-1">    
+        <img src="images/7.jpg" height="100%" width="100%"/>    
+</div>
+<h3>“中医在抗疫中的作用”调查问卷</h3>
+<from action="https://www.runoob.com/try/demo_source/demo-form.php" autocomplete="on" autofocus>
+<table>
+<tr>
+   <th>年龄：</th>
+   <td><input type="number" name="quantity" min="18" max="55"></td>
+</tr>
+<tr>
+   <th>性别：</th>
+   <td>
+   <input type="radio" name="sex" value="male">男
+   <input type="radio" name="sex" value="female">女
+   </td>
+</tr>
+<tr>
+   <th>您是否有过中医治疗经历：</th>
+   <td>
+   <input type="radio" name="sex" value="male">是
+   <input type="radio" name="sex" value="female">否
+   </td>
+</tr>
+<tr>
+   <th>您接触过的中医治疗方法：</th>
+   <td>
+   <input type="checkbox" name="hobby" value="Bike">中药
+   <input type="checkbox" name="hobby" value="Car">食疗
+   <input type="checkbox" name="hobby" value="Car">针灸
+   <input type="checkbox" name="hobby" value="Car">运动
+   <input type="checkbox" name="hobby" value="Car">推拿
+   <input type="checkbox" name="hobby" value="Car">拔罐
+</tr>
+<tr>
+   <th>您所了解的中医学经典：</th>
+   <td>
+       <input list="browsers" name="country" placeholder="请选择">
+       <datalist id="browsers">
+       <option value="《黄帝内经》">
+       <option value="《难经》">
+       <option value="《伤寒杂病论》">
+       <option value="《神农本草经》">
+       </datalist>
+    </td>
+</tr>
+<tr>
+     <th>您认为中医在抗疫中的作用：</th>
+     <td><textarea rows="10" cols="30"></textarea></td>
+</tr>
+     <th>表单填写时间：</th>
+     <td><input type="date" name="bday"></td>
+</tr>
+</table>
+<input type="submit" value="提交">
+<input type="reset" value="重置">
+</body>
+</html>

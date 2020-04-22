@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>表单练习1</title>
+</head>
+<body>
+<h3>欢迎您申请会员卡，申请过程将不会收取您任何费用，我们承诺保护您的信息安全，不会将它提供给第三方。</h3>
+<h5>注：*为必填内容</h5>
+<from action="https://www.runoob.com/try/demo_source/demo-form.php" autocomplete="on" autofocus>
+<table>
+<p>您的基本信息：</p>
+<tr>
+   <th>*姓名：</th>
+   <td><input type="text" name="user" required></td>
+</tr>
+<tr>
+   <th>*年龄：</th>
+   <td><input type="number" name="quantity" min="18" max="55"></td>
+</tr>
+<tr>
+   <th>性别：</th>
+   <td>
+   <input type="radio" name="sex" value="male">男
+   <input type="radio" name="sex" value="female">女
+   </td>
+</tr>
+<tr>
+   <th>兴趣爱好：</th>
+   <td>
+   <input type="checkbox" name="hobby" value="Bike">看书
+   <input type="checkbox" name="hobby" value="Car">看电影
+   <input type="checkbox" name="hobby" value="Car">听音乐
+   <input type="checkbox" name="hobby" value="Car">运动
+</tr>
+<tr>
+   <th>*邮箱：</th>
+   <td><input type="email" name="email"></td>
+</tr>
+<tr>
+   <th>*密码：</th>
+   <td><input type="password" name="password" required pattern="^[z-zA-Z0-9]{10,} $"></td>
+</tr>
+<tr>
+   <th>*确认密码：</th>
+   <td><input type="password" name="password" required pattern="^[z-zA-Z0-9]{10,} $"></td>
+</tr>
+<tr>
+   <th>*国家：</th>
+   <td>
+       <input list="browsers" name="country" placeholder="中华人民共和国">
+       <datalist id="browsers">
+       <option value="中华人民共和国">
+       <option value="美国">
+       <option value="日本">
+       <option value="韩国">
+       <option value="泰国">
+       <option value="新加坡">
+       <option value="马来西亚">
+       <option value="俄罗斯">
+       <option value="英国">
+       <option value="法国">
+       </datalist>
+    </td>
+</tr>
+<tr>
+   <th>省份：</th>
+   <td>
+       <input list="browsers" name="country" placeholder="请选择">
+       <datalist id="browsers">
+       <option value="山西省">
+       <option value="河北省">
+       <option value="辽宁省">
+       <option value="黑龙江省">
+       <option value="江苏省">
+       <option value="浙江省">
+       <option value="安徽省">
+       <option value="福建省">
+       <option value="江西省">
+       <option value="山东省">
+       <option value="河南省">
+       <option value="湖北省">
+       <option value="湖南省">
+       <option value="广东省">
+       <option value="海南省">
+       <option value="四川省">
+       <option value="贵州省">
+       <option value="云南省">
+       <option value="陕西省">
+       <option value="甘肃省">
+       <option value="青海省">
+       <option value="台湾省">
+       <option value="吉林省">
+       <option value="">
+       </datalist>
+    </td>
+</tr>
+<tr>
+         <th>上传你的志愿经历：</th>
+         <td><input type="file" name="img" multiple></td>
+     </tr>
+<tr>
+     <th>申请理由：</th>
+     <td><textarea rows="10" cols="30"></textarea></td>
+</tr>
+<tr>
+     <th>表单填写时间：</th>
+     <td><input type="date" name="bday"></td>
+     </tr>
+</table>
+<input type="submit" value="提交">
+<input type="reset" value="重置">
+</body>
+</html>
